@@ -23,17 +23,6 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyMenu);
   });
 
-  const options = [
-    { label: "All Categories", value: "0" },
-    { label: "Desktop", value: "1" },
-    { label: "Laptop", value: "2" },
-    { label: "Monitor", value: "3" },
-    { label: "Phone", value: "4" },
-    { label: "Watch", value: "5" },
-    { label: "Mouse", value: "6" },
-    { label: "Tablet", value: "7" },
-  ];
-
   return (
     <header
       className={`fixed left-0 top-0 w-full z-9999 bg-white transition-all ease-in-out duration-300 ${
@@ -44,7 +33,7 @@ const Header = () => {
         {/* <!-- header top start --> */}
         <div
           className={`flex flex-col lg:flex-row gap-5 items-end lg:items-center xl:justify-between ease-out duration-200 ${
-            stickyMenu ? "py-4" : "py-6"
+            stickyMenu ? "py-2" : "py-4"
           }`}
         >
           {/* <!-- header top left --> */}
@@ -65,7 +54,6 @@ const Header = () => {
 
                   <div className="relative max-w-[468px] sm:min-w-[468px] w-full">
                     {/* <!-- divider --> */}
-                    {/* <span className="absolute left-0 top-1/2 -translate-y-1/2 inline-block w-px h-5.5 bg-gray-4"></span> */}
                     <input
                       onChange={(e) => setSearchQuery(e.target.value)}
                       value={searchQuery}
