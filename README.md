@@ -5,9 +5,7 @@ Simple web for library management storefront-style UI built with Next.js App Rou
 ## 🚀 Tech Stack
 - Next.js 16 (App Router) + TypeScript
 - Tailwind CSS for styling
-- Redux Toolkit + React Redux for global state
 - Context providers for modal/preview state
-- Swiper for carousels; React Hot Toast for notifications
 
 ## 🗂️ Project Structure
 - `src/app/(site)` — App Router routes and layouts; root layout wraps Redux and modal providers
