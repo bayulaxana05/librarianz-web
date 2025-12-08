@@ -1,4 +1,3 @@
-import React from "react";
 import Authors from "@/components/Authors"
 import { Metadata } from "next";
 
