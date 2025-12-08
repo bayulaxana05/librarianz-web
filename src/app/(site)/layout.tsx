@@ -38,20 +38,20 @@ export default function RootLayout({
         ) : (
           <>
             <ReduxProvider>
-                  <AddMemberModalProvider>
-                    <AddAuthorModalProvider>
-                      <AddBookModalProvider>
-                        <BookDetailModalProvider>
-                            <Header />
-                            {children}
-                            <AddAuthorModal />
-                            <AddMemberModal />
-                            <AddBookModal />
-                            <BookDetailModal />
-                        </BookDetailModalProvider>
-                      </AddBookModalProvider>
-                    </AddAuthorModalProvider>
-                  </AddMemberModalProvider>
+              <AddMemberModalProvider>
+                <AddAuthorModalProvider>
+                  <AddBookModalProvider>
+                    <BookDetailModalProvider>
+                      <Header />
+                      {children}
+                      <AddAuthorModal />
+                      <AddMemberModal />
+                      <AddBookModal />
+                      <BookDetailModal />
+                    </BookDetailModalProvider>
+                  </AddBookModalProvider>
+                </AddAuthorModalProvider>
+              </AddMemberModalProvider>
             </ReduxProvider>
             <ScrollToTop />
             <Footer />
